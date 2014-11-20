@@ -2,8 +2,8 @@
 
 using namespace std;
 
-#include "Plot.h"
-#include "Position.h"
+#include "BaseRobot/Plot.h"
+#include "BaseRobot/Position.h"
 
 int main() {
     cout << "Hello, World!" << endl;

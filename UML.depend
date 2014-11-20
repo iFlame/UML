@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1416485548 source:c:\users\user\workspace_codeblocks\uml\uml\baserobot\objet.cpp
+	"Objet.h"
+
+1416485466 c:\users\user\workspace_codeblocks\uml\uml\baserobot\objet.h
+	<iostream>
+
+1416485085 source:c:\users\user\workspace_codeblocks\uml\uml\baserobot\plot.cpp
+	"Plot.h"
+
+1416485085 c:\users\user\workspace_codeblocks\uml\uml\baserobot\plot.h
+	<iostream>
+
+1416485085 source:c:\users\user\workspace_codeblocks\uml\uml\baserobot\position.cpp
+	"Position.h"
+
+1416485085 c:\users\user\workspace_codeblocks\uml\uml\baserobot\position.h
+	<iostream>
+
+1416485085 source:c:\users\user\workspace_codeblocks\uml\uml\baserobot\robot.cpp
+
