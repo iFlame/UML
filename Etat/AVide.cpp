@@ -5,4 +5,7 @@ AVide::AVide()
 {
     //ctor
 }
+EtatRobot* AVide::tourner(){
+    return this;
+}
 

@@ -5,4 +5,7 @@ EnChargeFacePlot::EnChargeFacePlot()
 {
     //ctor
 }
+EtatRobot* EnChargeFacePlot::tourner(){
+    return new EnChargeFacePlot;
+}
 

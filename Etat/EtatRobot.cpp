@@ -13,7 +13,8 @@ EtatRobot::EtatRobot(){
 }
 void EtatRobot::avancer(){
 }
-void EtatRobot::tourner(){
+EtatRobot* EtatRobot::tourner(){
+    throw WrongStatement();
 }
 void EtatRobot::poser(){
 }

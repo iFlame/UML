@@ -5,3 +5,6 @@ Figer::Figer()
 {
     //ctor
 }
+EtatRobot* Figer::tourner(){
+    return this; //FAUX A MODIF
+}

@@ -14,9 +14,10 @@ using namespace std;
 class EtatRobot {
 
 public :
+    class WrongStatement{};
     EtatRobot();
     void avancer();
-    void tourner();
+    EtatRobot* tourner();
     void poser();
     void peser();
     void rencontrerPlot();

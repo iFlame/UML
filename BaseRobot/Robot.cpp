@@ -9,12 +9,11 @@ Robot::Robot()
 void Robot::tourner(string direction)
 {
     try {
-       //etat->EtatRobot.tourner()
+       etat->tourner();
         if(direction.compare("est")||direction.compare("nord")||direction.compare("ouest")||direction.compare("sud")){
             this->direction=direction;
         }
-        throw(8);
-    } catch (int i) {
+    } catch (EtatRobot::WrongStatement) {
     }
 
 }

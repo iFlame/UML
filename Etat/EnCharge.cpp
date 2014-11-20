@@ -6,3 +6,7 @@ EnCharge::EnCharge()
     //ctor
 }
 
+EtatRobot* EnCharge::tourner(){
+    return this;
+}
+

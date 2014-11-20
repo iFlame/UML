@@ -5,5 +5,8 @@ AVideFacePlot::AVideFacePlot()
 {
     //ctor
 }
+EtatRobot* AVideFacePlot::tourner(){
+    return new AVide();
+}
 
 
