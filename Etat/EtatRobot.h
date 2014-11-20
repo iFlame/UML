@@ -11,4 +11,19 @@
 #include <iostream>
 using namespace std;
 
+class EtatRobot {
+
+public :
+    EtatRobot();
+    void avancer();
+    void tourner();
+    void poser();
+    void peser();
+    void rencontrerPlot();
+    void evaluerPlot();
+    void figer();
+    void repartir();
+    void afficher();
+};
+
 #endif

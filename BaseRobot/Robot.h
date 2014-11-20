@@ -11,12 +11,14 @@
 #include <iostream>
 #include "Position.h"
 #include "Plot.h"
+#include "../Etat/EtatRobot.h"
 
 using namespace std;
 
 class Robot {
 
 private:
+    EtatRobot* etat;
     string direction;
     Position* pos;
 public :

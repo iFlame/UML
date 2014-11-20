@@ -2,14 +2,23 @@
 
 Robot::Robot()
 {
+    etat=new EtatRobot();
     this->direction="est";
     pos=new Position(0,0);
 }
 void Robot::tourner(string direction)
 {
-    if(direction.compare("est")||direction.compare("nord")||direction.compare("ouest")||direction.compare("sud"))
-        this->direction=direction;
+    try {
+       //etat->EtatRobot.tourner()
+        if(direction.compare("est")||direction.compare("nord")||direction.compare("ouest")||direction.compare("sud")){
+            this->direction=direction;
+        }
+        throw(8);
+    } catch (int i) {
+    }
+
 }
+
 void Robot::avancer(int x,int y)
 {
     pos->setX(x);
