@@ -3,6 +3,7 @@
 using namespace std;
 
 #include "BaseRobot/Plot.h"
+#include "BaseRobot/Robot.h"
 #include "BaseRobot/Position.h"
 
 int main() {
@@ -17,6 +18,9 @@ int main() {
     cout << pos.getX() << endl;
     cout << pos.getY() << endl;
 
+    Robot robot=Robot();
+    robot.tourner("nord");
+    cout<<robot.getDirection();
     return 0;
 
 }

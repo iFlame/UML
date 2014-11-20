@@ -12,6 +12,7 @@
 #include "Position.h"
 #include "Plot.h"
 #include "../Etat/EtatRobot.h"
+#include "../Etat/AVide.h"
 
 using namespace std;
 
@@ -32,7 +33,7 @@ public :
     void figer();
     void repartir();
     void afficher();
-
+string getDirection();
 
 };
 

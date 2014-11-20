@@ -2,14 +2,14 @@
 
 Robot::Robot()
 {
-    etat=new EtatRobot();
+    etat=new AVide();
     this->direction="est";
     pos=new Position(0,0);
 }
 void Robot::tourner(string direction)
 {
     try {
-       etat->tourner();
+       etat=etat->tourner();
         if(direction.compare("est")||direction.compare("nord")||direction.compare("ouest")||direction.compare("sud")){
             this->direction=direction;
         }
@@ -43,4 +43,7 @@ void Robot::repartir()
 }
 void Robot::afficher()
 {
+}
+string Robot::getDirection(){
+    return direction;
 }

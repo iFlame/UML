@@ -13,7 +13,7 @@ public:
 
 private:
     static AVide instance;
-    AVide(const AVide&) : instance(AVide) {}
+//    AVide(const AVide&) : instance(AVide) {}
 };
 
 #endif

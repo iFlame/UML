@@ -16,15 +16,15 @@ class EtatRobot {
 public :
     class WrongStatement{};
     EtatRobot();
-    void avancer();
-    EtatRobot* tourner();
-    void poser();
-    void peser();
-    void rencontrerPlot();
-    void evaluerPlot();
-    void figer();
-    void repartir();
-    void afficher();
+    virtual void avancer();
+    virtual EtatRobot* tourner();
+    virtual void poser();
+    virtual void peser();
+    virtual void rencontrerPlot();
+    virtual void evaluerPlot();
+    virtual void figer();
+    virtual void repartir();
+    virtual void afficher();
 };
 
 #endif
