@@ -11,5 +11,6 @@ set(SOURCE_FILES main.cpp
                  BaseRobot/Plot.h
                  BaseRobot/Position.h
                  BaseRobot/Objet.cpp
-                 BaseRobot/Objet.h)
+                 BaseRobot/Objet.h
+                 Etat/*)
 add_executable(RobotProject ${SOURCE_FILES})

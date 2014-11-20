@@ -4,13 +4,16 @@
 #include "EnRoute.h"
 using namespace std;
 
-class AVide : public EnRoute
-{
-    public:
-        AVide();
-        EtatRobot* tourner();
-    protected:
-    private:
+class AVide : public EnRoute {
+
+public:
+    AVide();
+    EtatRobot* tourner();
+    static AVide getInstance();
+
+private:
+    static AVide instance;
+    AVide(const AVide&) : instance(AVide) {}
 };
 
 #endif
