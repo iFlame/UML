@@ -18,4 +18,5 @@ int main() {
     cout << pos.getY() << endl;
 
     return 0;
+
 }

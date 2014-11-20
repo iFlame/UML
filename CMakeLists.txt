@@ -3,5 +3,13 @@ project(RobotProject)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Robot.cpp Robot.h Plot.cpp Plot.h Position.cpp Position.h)
+set(SOURCE_FILES main.cpp
+                 BaseRobot/Robot.cpp
+                 BaseRobot/Plot.cpp
+                 BaseRobot/Position.cpp
+                 BaseRobot/Robot.h
+                 BaseRobot/Plot.h
+                 BaseRobot/Position.h
+                 BaseRobot/Objet.cpp
+                 BaseRobot/Objet.h)
 add_executable(RobotProject ${SOURCE_FILES})
