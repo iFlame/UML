@@ -1,24 +1,28 @@
 //=======================================================================
-// Basic C++: La classe Plot
+// Basic C++: La classe Position
 //-----------------------------------------------------------------------
 // Quentin Cornevin - Clement Audry
-// $Id: Plot.h
+// $Id: Position.h
 //=======================================================================
 
-#ifndef _PLOT_H_
-#define _PLOT_H_
+#ifndef _POSITION_H_
+#define _POSITION_H_
 
 #include <iostream>
 using namespace std;
 
-class Plot {
+class Position {
 
 private:
-    int hauteur;
+    int x;
+    int y;
 
 public:
-    Plot(int = 10);
-    int getHauteur();
+    Position(int = 0, int = 0);
+    void setX(int);
+    void setY(int);
+    int getX();
+    int getY();
 };
 
 #endif
