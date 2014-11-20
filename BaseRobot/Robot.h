@@ -9,20 +9,23 @@
 #define _ROBOT_H_
 
 #include <iostream>
+#include "Position.h"
+#include "Plot.h"
+
 using namespace std;
 
 class Robot {
 
 private:
-    String direction;
-
+    string direction;
+    Position* pos;
 public :
-
+    Robot();
     void avancer(int, int);
-    void tourner(String);
+    void tourner(string);
     void poser();
     void peser();
-    void rencontrerPlot(); // TODO : Rajouter le plot en paramètre.
+    void rencontrerPlot(Plot);
     void evaluerPlot();
     void figer();
     void repartir();
