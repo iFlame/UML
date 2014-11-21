@@ -1,8 +1,11 @@
 #include "EnRoute.h"
 using namespace std;
 
-EnRoute::EnRoute()
-{
-    //ctor
-}
+/**
+ * Constructeur de la classe EnRoute.
+ */
+EnRoute::EnRoute() : EtatRobot() { }
+
+
+
 

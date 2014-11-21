@@ -7,13 +7,11 @@ using namespace std;
 
 class EnCharge : public EnRoute
 {
-private:
+    public:
+        EnCharge();
+        EtatRobot* tourner();
 
-
-public:
-    EnCharge();
-    EtatRobot* tourner();
-    void afficher() const;
+    private:
 };
 
 #endif

@@ -9,12 +9,11 @@ class AVide : public EnRoute {
 public:
     AVide();
     EtatRobot* tourner();
-    void afficher() const;
-    static AVide& getInstance();
+    static AVide getInstance();
 
 private:
     static AVide instance;
-  //  AVide(const AVide&) {}
+//    AVide(const AVide&) : instance(AVide) {}
 };
 
 #endif

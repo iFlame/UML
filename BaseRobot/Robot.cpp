@@ -1,31 +1,57 @@
+//=======================================================================
+// Basic C++: La classe Robot
+//-----------------------------------------------------------------------
+// Quentin Cornevin - Clement Audry
+// $Id: Robot.cpp
+//=======================================================================
+
 #include "Robot.h"
 
+Robot::Robot(char newDirection, EtatRobot* etatRobot, Position position) : direction(newDirection), etat(etatRobot), pos(position) { }
 Robot::Robot()
 {
-    etat=new AVide();
-    this->direction="est";
-    pos=new Position(0,0);
+    etat=new EnChargeFacePlot();
+    this->direction='E';
+    pos=Position(0,0);
 }
-void Robot::tourner(string direction)
+
+void Robot::tourner(char direction)
 {
     try {
-       etat=etat->tourner();
-        if(direction.compare("est")||direction.compare("nord")||direction.compare("ouest")||direction.compare("sud")){
+        etat->tourner();
+        if(direction == 'E' || direction == 'N' || direction == 'O' || direction == 'S' ){
             this->direction=direction;
         }
-    } catch (EtatRobot::WrongStatement) {
+    } catch (EtatRobot::WrongStatementTourner) {
+        cout << "Erreur le robot ne peut pas tourner." << endl;
     }
-
 }
+
+
+EtatRobot* Robot::getEtat() {
+    return etat;
+}
+
+
+void Robot::afficher() {
+    etat->afficher();
+}
+
+void Robot::poser() {
+    etat=etat->poser();
+    etat->afficher();
+
+//    etat=AVideFacePlot::getInstance();
+//    etat->afficher();
+}
+
 
 void Robot::avancer(int x,int y)
 {
-    pos->setX(x);
-    pos->setY(y);
+    pos.setX(x);
+    pos.setY(y);
 }
-void Robot::poser()
-{
-}
+
 void Robot::peser()
 {
 }
@@ -41,9 +67,7 @@ void Robot::figer()
 void Robot::repartir()
 {
 }
-void Robot::afficher()
-{
-}
-string Robot::getDirection(){
+
+char Robot::getDirection(){
     return direction;
 }

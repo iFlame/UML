@@ -9,18 +9,15 @@ using namespace std;
 
 #include "EtatRobot.h"
 
-EtatRobot::EtatRobot(){}
-
-
+EtatRobot::EtatRobot(){
+}
+void EtatRobot::avancer(){
+}
 EtatRobot* EtatRobot::tourner(){
-    throw WrongStatementTourner();
+    throw WrongStatement();
 }
-
-EtatRobot* EtatRobot::poser(){
-    throw WrongStatementPoser();
+void EtatRobot::poser(){
 }
-
-/*
 void EtatRobot::peser(){
 }
 void EtatRobot::rencontrerPlot(){
@@ -31,7 +28,5 @@ void EtatRobot::figer(){
 }
 void EtatRobot::repartir(){
 }
-*/
-void EtatRobot::afficher() const{
-    cout << "Afficher de EtatRobot" << endl;
+void EtatRobot::afficher(){
 }

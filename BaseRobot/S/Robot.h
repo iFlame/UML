@@ -13,37 +13,27 @@
 #include "Plot.h"
 #include "../Etat/EtatRobot.h"
 #include "../Etat/AVide.h"
-#include "../Etat/EnChargeFacePlot.h"
-#include "../Etat/AVideFacePlot.h"
-
 
 using namespace std;
 
 class Robot {
 
 private:
-    EtatRobot *etat;
-    char direction;
-    Position pos;
-
+    EtatRobot* etat;
+    string direction;
+    Position* pos;
 public :
-    Robot(char, EtatRobot*, Position);
-Robot();
-    virtual void tourner(char);
-    EtatRobot* getEtat();
-    virtual void afficher();
-
-
-
-
+    Robot();
     void avancer(int, int);
+    void tourner(string);
     void poser();
     void peser();
     void rencontrerPlot(Plot);
     void evaluerPlot();
     void figer();
     void repartir();
-    char getDirection();
+    void afficher();
+string getDirection();
 
 };
 

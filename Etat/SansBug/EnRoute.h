@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class EnRoute : public virtual EtatRobot
+class EnRoute : public EtatRobot
 {
     public:
         EnRoute();

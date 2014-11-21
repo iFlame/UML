@@ -9,13 +9,11 @@ using namespace std;
 
 class EnChargeFacePlot : public EnRoute
 {
-public:
-    EnChargeFacePlot();
-    EtatRobot* tourner();
-    void afficher() const;
-    EtatRobot* poser();
+    public:
+        EnChargeFacePlot();
+        EtatRobot* tourner();
 
-private:
+    private:
 };
 
 #endif

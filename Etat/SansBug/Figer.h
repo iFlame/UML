@@ -7,12 +7,11 @@ using namespace std;
 
 class Figer : public EtatRobot
 {
-public:
-    Figer();
-    EtatRobot* tourner();
-    void afficher() const;
+    public:
+        Figer();
+        EtatRobot* tourner();
 
-private:
+    private:
 };
 
 #endif

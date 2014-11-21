@@ -19,7 +19,9 @@ int main() {
     cout << pos.getY() << endl;
 
     Robot robot=Robot();
-    robot.tourner("nord");
+    robot.poser();
+    robot.tourner('O');
+    robot.getEtat()->afficher();
     cout<<robot.getDirection();
     return 0;
 

@@ -31,6 +31,29 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="BaseRobot/Objet.cpp" />
+		<Unit filename="BaseRobot/Objet.h" />
+		<Unit filename="BaseRobot/Plot.cpp" />
+		<Unit filename="BaseRobot/Plot.h" />
+		<Unit filename="BaseRobot/Position.cpp" />
+		<Unit filename="BaseRobot/Position.h" />
+		<Unit filename="BaseRobot/Robot.cpp" />
+		<Unit filename="BaseRobot/Robot.h" />
+		<Unit filename="Etat/AVide.cpp" />
+		<Unit filename="Etat/AVide.h" />
+		<Unit filename="Etat/AVideFacePlot.cpp" />
+		<Unit filename="Etat/AVideFacePlot.h" />
+		<Unit filename="Etat/EnCharge.cpp" />
+		<Unit filename="Etat/EnCharge.h" />
+		<Unit filename="Etat/EnChargeFacePlot.cpp" />
+		<Unit filename="Etat/EnChargeFacePlot.h" />
+		<Unit filename="Etat/EnRoute.cpp" />
+		<Unit filename="Etat/EnRoute.h" />
+		<Unit filename="Etat/EtatRobot.cpp" />
+		<Unit filename="Etat/EtatRobot.h" />
+		<Unit filename="Etat/Figer.cpp" />
+		<Unit filename="Etat/Figer.h" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
