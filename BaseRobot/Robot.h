@@ -15,11 +15,12 @@
 #include "../Etat/AVide.h"
 #include "../Etat/EnChargeFacePlot.h"
 #include "../Etat/AVideFacePlot.h"
+#include "../Afficher/ElementARepresenter.h"
 
 
 using namespace std;
 
-class Robot {
+class Robot /*: public ElementARepresenter*/{
 
 private:
     EtatRobot *etat;

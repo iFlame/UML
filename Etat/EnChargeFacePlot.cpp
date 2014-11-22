@@ -4,10 +4,13 @@
 using namespace std;
 
 
-EnChargeFacePlot::EnChargeFacePlot()
-{
-    //ctor
+
+EnChargeFacePlot::EnChargeFacePlot() {}
+EnChargeFacePlot * EnChargeFacePlot::_singletonInst = new EnChargeFacePlot();
+EnChargeFacePlot * EnChargeFacePlot::getInstance() {
+    return _singletonInst;
 }
+
 EtatRobot* EnChargeFacePlot::tourner(){
     return new EnChargeFacePlot;
 }

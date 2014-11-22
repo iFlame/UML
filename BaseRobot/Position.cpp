@@ -9,7 +9,7 @@
 using namespace std;
 
 /**
- * Constructeur de la classe position qui prend deux paramètre x et y initialiser à 0 par défaut.
+ * Constructeur de la classe position qui prend deux paramètres x et y initialiser à 0 par défaut.
  */
 Position::Position(int x, int y): x(x), y(y) {}
 

@@ -1,15 +1,16 @@
 #include "Figer.h"
 using namespace std;
 
-/*
-Figer::Figer()
-{
-    //ctor
+Figer::Figer() {}
+Figer * Figer::_singletonInst = new Figer();
+Figer * Figer::getInstance() {
+    return _singletonInst;
 }
+
 EtatRobot* Figer::tourner(){
-    return this; //FAUX A MODIF
+    return Figer::getInstance();
 }
-*/
+
 
 /**
 * Affichage de l'état Figer.

@@ -1,17 +1,17 @@
 #include "EnCharge.h"
 using namespace std;
 
-/*
-EnCharge::EnCharge()
-{
-    //ctor
+EnCharge::EnCharge() {}
+EnCharge * EnCharge::_singletonInst = new EnCharge();
+EnCharge * EnCharge::getInstance() {
+    return _singletonInst;
 }
 
 EtatRobot* EnCharge::tourner(){
-    return this;
+    return EnCharge::getInstance();
 }
 
-*/
+
 /**
 * Affichage de l'état EnCharge.
 */

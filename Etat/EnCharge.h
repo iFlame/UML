@@ -8,10 +8,15 @@ using namespace std;
 class EnCharge : public EnRoute
 {
 private:
+    EnCharge();
+
+    static EnCharge * _singletonInst;
+    EnCharge(EnCharge const&);
+
 
 
 public:
-    EnCharge();
+    static EnCharge * getInstance();
     EtatRobot* tourner();
     void afficher() const;
 };

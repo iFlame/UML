@@ -10,7 +10,7 @@
 Robot::Robot(char newDirection, EtatRobot* etatRobot, Position position) : direction(newDirection), etat(etatRobot), pos(position) { }
 Robot::Robot()
 {
-    etat=new EnChargeFacePlot();
+    etat=AVide::getInstance();
     this->direction='E';
     pos=Position(0,0);
 }

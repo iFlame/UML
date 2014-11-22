@@ -10,12 +10,16 @@ using namespace std;
 class EnChargeFacePlot : public EnRoute
 {
 public:
-    EnChargeFacePlot();
+    EtatRobot* poser();
     EtatRobot* tourner();
     void afficher() const;
-    EtatRobot* poser();
+    static EnChargeFacePlot* getInstance();
 
 private:
+    EnChargeFacePlot();
+    static EnChargeFacePlot * _singletonInst;
+    EnChargeFacePlot(EnChargeFacePlot const&);
+
 };
 
 #endif

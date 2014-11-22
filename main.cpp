@@ -19,7 +19,7 @@ int main() {
     cout << pos.getY() << endl;
 
     Robot robot=Robot();
-    robot.poser();
+    //robot.poser();
     robot.tourner('O');
     robot.getEtat()->afficher();
     cout<<robot.getDirection();

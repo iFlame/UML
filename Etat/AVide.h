@@ -7,14 +7,16 @@ using namespace std;
 class AVide : public EnRoute {
 
 public:
-    AVide();
     EtatRobot* tourner();
     void afficher() const;
-    static AVide& getInstance();
+    static AVide* getInstance();
 
 private:
-    static AVide instance;
-  //  AVide(const AVide&) {}
+    AVide();
+    static AVide * _singletonInst;
+    AVide(AVide const&);
+
+
 };
 
 #endif
