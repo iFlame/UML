@@ -6,12 +6,14 @@ Figer * Figer::_singletonInst = new Figer();
 Figer * Figer::getInstance() {
     return _singletonInst;
 }
-
-EtatRobot* Figer::tourner(){
-    return Figer::getInstance();
+EtatRobot* Figer::etatPrecedant=Figer::getInstance();
+void Figer::setEtat(EtatRobot* nouvelleEtat){
+    etatPrecedant=nouvelleEtat;
 }
 
-
+EtatRobot* Figer::repartir(){
+    return etatPrecedant;
+}
 /**
 * Affichage de l'état Figer.
 */

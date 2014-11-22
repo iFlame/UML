@@ -3,6 +3,9 @@
 #include <iostream>
 #include "EnRoute.h"
 #include "AVide.h"
+#include "EnChargeFacePlot.h"
+#include "Figer.h"
+
 
 
 using namespace std;
@@ -19,8 +22,12 @@ private:
 public:
 
     static AVideFacePlot * getInstance();
+    EtatRobot* figer();
 
     EtatRobot* tourner();
+    EtatRobot* evaluerPlot();
+    EtatRobot* saisir();
+
     void afficher() const;
 
 

@@ -9,10 +9,20 @@ AVideFacePlot * AVideFacePlot::getInstance() {
 
 
 EtatRobot* AVideFacePlot::tourner(){
-    cout<<"test";
     return AVide::getInstance();
 }
 
+EtatRobot* AVideFacePlot::evaluerPlot(){
+    return AVideFacePlot::getInstance();
+}
+
+EtatRobot* AVideFacePlot::saisir(){
+    return EnChargeFacePlot::getInstance();
+}
+EtatRobot* AVideFacePlot::figer() {
+    Figer::setEtat(AVideFacePlot::getInstance());
+    return Figer::getInstance();
+}
 
 
 /**

@@ -2,6 +2,9 @@
 #define ENCHARGE_H
 #include <iostream>
 #include "EnRoute.h"
+#include "EnChargeFacePlot.h"
+#include "Figer.h"
+
 
 using namespace std;
 
@@ -18,6 +21,11 @@ private:
 public:
     static EnCharge * getInstance();
     EtatRobot* tourner();
+    EtatRobot* figer();
+    EtatRobot* peser();
+    EtatRobot* avancer();
+    EtatRobot* rencontrerPlot();
+
     void afficher() const;
 };
 

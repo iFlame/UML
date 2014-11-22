@@ -8,9 +8,11 @@ using namespace std;
 class Figer : public EtatRobot
 {
 public:
-    EtatRobot* tourner();
+    static EtatRobot* etatPrecedant;
+    EtatRobot* repartir();
     void afficher() const;
     static Figer* getInstance();
+    static void setEtat(EtatRobot* );
 
 
 private:

@@ -22,6 +22,16 @@ EtatRobot* AVide::tourner(){
     return AVide::getInstance();
 }
 
+EtatRobot* AVide::avancer(){
+    return AVide::getInstance();
+}
+EtatRobot* AVide::figer() {
+    Figer::setEtat(AVide::getInstance());
+    return Figer::getInstance();
+}
+EtatRobot* AVide::rencontrerPlot(){
+    return AVideFacePlot::getInstance();
+}
 /**
   * Affichage de l'état AVide.
   */

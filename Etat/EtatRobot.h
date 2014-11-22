@@ -16,23 +16,24 @@ class EtatRobot {
 public :
     class WrongStatementTourner {};
     class WrongStatementPoser {};
+    class WrongStatementPeser {};
+    class WrongStatementAvancer {};
+    class WrongStatementRencontrerPlot {};
+    class WrongStatementEvaluerPlot {};
+    class WrongStatementFiger {};
+    class WrongStatementRepartir {};
+
     EtatRobot();
 
     virtual EtatRobot* tourner();
     virtual EtatRobot* poser();
     virtual void afficher() const;
-
-
-/*
-   virtual void avancer();
-
-    virtual void poser();
-    virtual void peser();
-    virtual void rencontrerPlot();
-    virtual void evaluerPlot();
-    virtual void figer();
-    virtual void repartir();
-*/
+    virtual EtatRobot* avancer();
+    virtual EtatRobot* peser();
+    virtual EtatRobot* rencontrerPlot();
+    virtual EtatRobot* evaluerPlot();
+    virtual EtatRobot* figer();
+    virtual EtatRobot* repartir();
 
 };
 

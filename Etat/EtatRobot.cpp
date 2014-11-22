@@ -19,19 +19,25 @@ EtatRobot* EtatRobot::tourner(){
 EtatRobot* EtatRobot::poser(){
     throw WrongStatementPoser();
 }
+EtatRobot* EtatRobot::avancer(){
+    throw WrongStatementAvancer();
+}
+EtatRobot* EtatRobot::peser(){
+    throw WrongStatementPeser();
+}
+EtatRobot* EtatRobot::rencontrerPlot(){
+    throw WrongStatementRencontrerPlot();
+}
+EtatRobot* EtatRobot::evaluerPlot(){
+    throw WrongStatementEvaluerPlot();
+}
+EtatRobot* EtatRobot::figer(){
+    throw WrongStatementFiger();
+}
+EtatRobot* EtatRobot::repartir(){
+    throw WrongStatementRepartir();
+}
 
-/*
-void EtatRobot::peser(){
-}
-void EtatRobot::rencontrerPlot(){
-}
-void EtatRobot::evaluerPlot(){
-}
-void EtatRobot::figer(){
-}
-void EtatRobot::repartir(){
-}
-*/
 void EtatRobot::afficher() const{
     cout << "Afficher de EtatRobot" << endl;
 }
