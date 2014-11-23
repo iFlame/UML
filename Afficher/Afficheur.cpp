@@ -5,6 +5,6 @@ Afficheur::Afficheur()
 
 }
 
-void afficher(){
-    cout<<"Test afficher";
+void Afficheur::afficher(){
+    cout<<"Pas d'afficheur instancié.";
 }

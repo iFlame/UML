@@ -7,9 +7,10 @@
 
 #include "Robot.h"
 
-Robot::Robot(char newDirection, EtatRobot* etatRobot, Position position) : direction(newDirection), etat(etatRobot), pos(position) { }
+//Robot::Robot(char newDirection, EtatRobot* etatRobot, Position position) : direction(newDirection), etat(etatRobot), pos(position) { }
 Robot::Robot()
 {
+    attacherAfficheur(new AfficheurDefault(/*this*/));
     etat=AVide::getInstance();
     this->direction='E';
     pos=Position(0,0);

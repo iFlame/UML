@@ -1,10 +1,10 @@
 #include "AfficheurDefault.h"
 
-AfficheurDefault::AfficheurDefault()
+AfficheurDefault::AfficheurDefault(/*Robot* robot*/)
 {
-    //ctor
+//    robot=robot;
 }
 
-void afficher(){
-    cout<<"Test afficher"
+void AfficheurDefault::afficher(){
+    cout<<"Test afficherdef ";
 }

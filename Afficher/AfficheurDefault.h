@@ -1,14 +1,14 @@
 #ifndef AFFICHEURDEFAULT_H
 #define AFFICHEURDEFAULT_H
-#include "Afficheur"
-#include "../BaseRobot/Robot.h"
-
+#include "Afficheur.h"
+#include <iostream>
 
 class AfficheurDefault : public Afficheur
 {
     public:
+        //Robot* robot;
         AfficheurDefault();
-        virtual void afficher();
+        void afficher();
 
     protected:
     private:

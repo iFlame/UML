@@ -13,12 +13,12 @@
 #include "Plot.h"
 #include "../Etat/EtatRobot.h"
 #include "../Etat/AVide.h"
-//#include "../Afficher/ElementARepresenter.h"
+#include "../Afficher/ElementARepresenter.h"
 
 
 using namespace std;
 
-class Robot /*: public ElementARepresenter*/{
+class Robot : public ElementARepresenter {
 
 private:
     EtatRobot *etat;
@@ -26,15 +26,11 @@ private:
     Position pos;
 
 public :
-    Robot(char, EtatRobot*, Position);
+    //Robot(char, EtatRobot*, Position);
 Robot();
-    virtual void tourner(char);
+    void tourner(char);
     EtatRobot* getEtat();
-    virtual void afficher();
-
-
-
-
+    void afficher();
     void avancer(int, int);
     void poser();
     void peser();
@@ -43,7 +39,6 @@ Robot();
     void figer();
     void repartir();
     char getDirection();
-
 };
 
 #endif
