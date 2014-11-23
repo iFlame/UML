@@ -13,7 +13,7 @@ Objet.o : $(repC)Objet.hpp $(repC)Objet.cpp
 Position.o : $(repC)Position.hpp $(repC)Position.cpp
 	g++ $(repC)Position.cpp -c -o Position.o
 	
-Robot.o : $(repC)Robot.hpp $(repC)Robot.cpp $(repC)Plot.hpp $(repC)Objet.hpp $(repC)Position.hpp $(repE)EtatRobot.hpp
+Robot.o : $(repC)Robot.hpp $(repC)Robot.cpp $(repC)Plot.hpp $(repC)Objet.hpp $(repC)Position.hpp $(repE)EtatRobot.hpp $(repE)AVide.hpp
 	g++ $(repC)Robot.cpp -c -o Robot.o
 
 
