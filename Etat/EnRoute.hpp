@@ -1,7 +1,7 @@
 #ifndef ENROUTE_H
 #define ENROUTE_H
 #include <iostream>
-#include "EtatRobot.h"
+#include "EtatRobot.hpp"
 
 using namespace std;
 

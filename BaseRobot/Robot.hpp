@@ -9,10 +9,10 @@
 #define _ROBOT_H_
 
 #include <iostream>
-#include "Position.h"
-#include "Plot.h"
-#include "../Etat/EtatRobot.h"
-#include "../Etat/AVide.h"
+#include "Position.hpp"
+#include "Plot.hpp"
+#include "../Etat/EtatRobot.hpp"
+#include "../Etat/AVide.hpp"
 //#include "../Afficher/ElementARepresenter.h"
 
 

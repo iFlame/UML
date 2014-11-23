@@ -1,4 +1,4 @@
-#include "AVideFacePlot.h"
+#include "AVideFacePlot.hpp"
 using namespace std;
 
 AVideFacePlot::AVideFacePlot() {}

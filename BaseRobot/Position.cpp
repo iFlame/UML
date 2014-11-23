@@ -5,7 +5,7 @@
 // $Id: Position.cpp
 //=======================================================================
 
-#include "Position.h"
+#include "Position.hpp"
 using namespace std;
 
 /**

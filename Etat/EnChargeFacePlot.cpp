@@ -1,5 +1,5 @@
-#include "EnChargeFacePlot.h"
-#include "AVideFacePlot.h"
+#include "EnChargeFacePlot.hpp"
+#include "AVideFacePlot.hpp"
 
 using namespace std;
 

@@ -1,7 +1,7 @@
 #ifndef FIGER_H
 #define FIGER_H
 #include <iostream>
-#include "EtatRobot.h"
+#include "EtatRobot.hpp"
 
 using namespace std;
 

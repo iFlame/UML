@@ -1,10 +1,10 @@
 #ifndef AVIDEFACEPLOT_H
 #define AVIDEFACEPLOT_H
 #include <iostream>
-#include "EnRoute.h"
-#include "AVide.h"
-#include "EnChargeFacePlot.h"
-#include "Figer.h"
+#include "EnRoute.hpp"
+#include "AVide.hpp"
+#include "EnChargeFacePlot.hpp"
+#include "Figer.hpp"
 
 
 

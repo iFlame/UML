@@ -1,4 +1,4 @@
-#include "Figer.h"
+#include "Figer.hpp"
 using namespace std;
 
 Figer::Figer() {}

@@ -1,9 +1,9 @@
 #ifndef AVIDE_H
 #define AVIDE_H
 #include <iostream>
-#include "EnRoute.h"
-#include "AVideFacePlot.h"
-#include "Figer.h"
+#include "EnRoute.hpp"
+#include "AVideFacePlot.hpp"
+#include "Figer.hpp"
 
 using namespace std;
 
