@@ -7,7 +7,7 @@
 
 using namespace std;
 
-#include "Plot.hpp"
+#include "Plot.h"
 
 /**
  * Constructeur de la classe Plot, qui prend uniquement une hauteur en paramètre.

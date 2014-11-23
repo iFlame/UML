@@ -5,7 +5,7 @@
 // $Id: Robot.cpp
 //=======================================================================
 
-#include "Robot.hpp"
+#include "Robot.h"
 
 Robot::Robot(char newDirection, EtatRobot* etatRobot, Position position) : direction(newDirection), etat(etatRobot), pos(position) { }
 Robot::Robot()

@@ -1,9 +1,9 @@
 #ifndef ENCHARGE_H
 #define ENCHARGE_H
 #include <iostream>
-#include "EnRoute.hpp"
-#include "EnChargeFacePlot.hpp"
-#include "Figer.hpp"
+#include "EnRoute.h"
+#include "EnChargeFacePlot.h"
+#include "Figer.h"
 
 
 using namespace std;

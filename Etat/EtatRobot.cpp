@@ -7,7 +7,7 @@
 
 using namespace std;
 
-#include "EtatRobot.hpp"
+#include "EtatRobot.h"
 
 EtatRobot::EtatRobot(){}
 

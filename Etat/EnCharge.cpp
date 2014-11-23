@@ -1,4 +1,4 @@
-#include "EnCharge.hpp"
+#include "EnCharge.h"
 using namespace std;
 
 EnCharge::EnCharge() {}

@@ -2,9 +2,9 @@
 
 using namespace std;
 
-#include "BaseRobot/Plot.hpp"
-#include "BaseRobot/Robot.hpp"
-#include "BaseRobot/Position.hpp"
+#include "BaseRobot/Plot.h"
+#include "BaseRobot/Robot.h"
+#include "BaseRobot/Position.h"
 
 int main() {
     cout << "Hello, World!" << endl;

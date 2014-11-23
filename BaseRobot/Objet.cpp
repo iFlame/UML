@@ -5,7 +5,7 @@
 // $Id: Objet.cpp
 //=======================================================================
 
-#include "Objet.hpp"
+#include "Objet.h"
 /**
  * Constructeur de la classe Objet, qui prend uniquement un poids en param�tre.
  */
