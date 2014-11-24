@@ -10,9 +10,7 @@
 
 #include <iostream>
 using namespace std;
-
 class EtatRobot {
-
 public :
     class WrongStatementTourner {};
     class WrongStatementPoser {};
@@ -23,7 +21,6 @@ public :
     class WrongStatementFiger {};
     class WrongStatementRepartir {};
     class WrongStatementSaisir {};
-
 
     EtatRobot();
 
@@ -38,7 +35,6 @@ public :
     virtual EtatRobot* repartir();
     virtual EtatRobot* saisir();
     static EtatRobot* initialisation();
-
 };
 
 #endif

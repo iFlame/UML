@@ -16,13 +16,9 @@ public:
     void afficher() const;
     static AVide* getInstance();
     EtatRobot* figer();
-
 private:
     AVide();
     static AVide * _singletonInst;
-    AVide(AVide const&);
-
-
 };
 
 #endif

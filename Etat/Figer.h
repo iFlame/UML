@@ -13,12 +13,9 @@ public:
     void afficher() const;
     static Figer* getInstance();
     static void setEtat(EtatRobot* );
-
-
 private:
     Figer();
     static Figer * _singletonInst;
-    Figer(Figer const&);
 };
 
 #endif

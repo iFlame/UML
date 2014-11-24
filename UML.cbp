@@ -31,6 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Afficher/Afficheur.cpp" />
+		<Unit filename="Afficher/Afficheur.h" />
+		<Unit filename="Afficher/AfficheurDefault.cpp" />
+		<Unit filename="Afficher/AfficheurDefault.h" />
+		<Unit filename="Afficher/ElementARepresenter.cpp" />
+		<Unit filename="Afficher/ElementARepresenter.h" />
 		<Unit filename="BaseRobot/Objet.cpp" />
 		<Unit filename="BaseRobot/Objet.h" />
 		<Unit filename="BaseRobot/Plot.cpp" />

@@ -7,7 +7,6 @@
 
 #include "Robot.h"
 
-//Robot::Robot(char newDirection, EtatRobot* etatRobot, Position position) : direction(newDirection), etat(etatRobot), pos(position) { }
 Robot::Robot()
 {
     attacherAfficheur(NULL);
@@ -21,8 +20,8 @@ Robot::Robot()
 void Robot::tourner(char direction)
 {
     try {
-        ordre="tourner";
         if(direction == 'E' || direction == 'N' || direction == 'O' || direction == 'S'||this->direction!=direction ){
+            ordre="tourner";
             etat=etat->tourner();
             this->direction=direction;
             plot=NULL;
@@ -41,7 +40,7 @@ void Robot::saisir(Objet* obj)
         this->objet=obj;
         notifier();
     } catch (EtatRobot::WrongStatementSaisir) {
-        cout << "Erreur le robot ne peut pas tourner." << endl;
+        cout << "Erreur le robot ne peut pas saisir d'objet." << endl;
     }
 }
 
@@ -68,7 +67,6 @@ void Robot::poser() {
     }
 }
 
-
 void Robot::avancer(int x,int y)
 {
     try {
@@ -80,7 +78,6 @@ void Robot::avancer(int x,int y)
     } catch (EtatRobot::WrongStatementAvancer) {
         cout << "Erreur le robot ne peut pas avancer." << endl;
     }
-
 }
 
 void Robot::peser()
@@ -89,7 +86,7 @@ void Robot::peser()
         ordre="peser";
         etat=etat->peser();
         notifier();
-        cout<<"L'objet pese "<< objet->getPoids();
+        cout<<"L'objet pese "<< objet->getPoids()<<endl;
 
     } catch (EtatRobot::WrongStatementPeser) {
         cout << "Erreur le robot ne peut pas peser." << endl;
@@ -113,7 +110,7 @@ void Robot::evaluerPlot()
         ordre = "evaluer";
         etat=etat->evaluerPlot();
         notifier();
-        cout<<"Le plot est de hauteur "<< plot->getHauteur();
+        cout<<"Le plot est de hauteur "<< plot->getHauteur()<<endl;
     } catch (EtatRobot::WrongStatementEvaluerPlot) {
         cout << "Erreur le robot ne peut pas evaluer de plot." << endl;
     }
@@ -132,6 +129,7 @@ void Robot::figer()
 void Robot::repartir()
 {
     try {
+        ordre="repartir";
         etat=etat->repartir();
         notifier();
 

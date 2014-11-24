@@ -3,12 +3,10 @@
 #include <iostream>
 
 using namespace std;
-//#include "../BaseRobot/Robot.h"
 
 class Afficheur
 {
     public:
-//        Robot* robot;
         Afficheur();
         virtual void afficher();
     protected:

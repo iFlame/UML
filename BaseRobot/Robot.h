@@ -13,7 +13,6 @@
 #include "Plot.h"
 #include "Objet.h"
 #include "../Etat/EtatRobot.h"
-#include "../Etat/AVide.h"
 #include "../Afficher/ElementARepresenter.h"
 
 
@@ -29,10 +28,8 @@ private:
     Objet* objet;
     Plot* plot;
 public :
-    //Robot(char, EtatRobot*, Position);
-Robot();
+    Robot();
     void tourner(char);
-    EtatRobot* getEtat();
     void afficher();
     void avancer(int, int);
     void poser();
@@ -42,12 +39,12 @@ Robot();
     void figer();
     void repartir();
     void saisir(Objet*);
+    EtatRobot* getEtat();
     char getDirection();
     string getOrdre();
     Position* getPosition();
     Objet* getObjet();
     Plot* getPlot();
-
 };
 
 #endif

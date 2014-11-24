@@ -16,18 +16,21 @@ int main() {
     Position pos = Position();
     cout << pos.getX() << endl;
     cout << pos.getY() << endl;
+
     Objet* objet=new Objet(5);
+
+    cout << "Test Robot" << endl;
+
     Robot* robot=new Robot();
     AfficheurDefault* affich=new AfficheurDefault(robot);
     robot->attacherAfficheur(affich);
-    //robot.poser();
     robot->tourner('O');
     robot->rencontrerPlot(plot);
     robot->evaluerPlot();
     robot->saisir(objet);
     robot->tourner('S');
-
-    cout<<robot->getDirection();
+    robot->figer();
+    robot->repartir();
     return 0;
 
 }

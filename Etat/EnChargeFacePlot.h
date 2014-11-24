@@ -5,10 +5,6 @@
 #include "EnCharge.h"
 #include "AVideFacePlot.h"
 #include "Figer.h"
-
-
-
-
 using namespace std;
 
 class EnChargeFacePlot : public EnRoute
@@ -18,15 +14,12 @@ public:
     EtatRobot* peser();
     EtatRobot* tourner();
     EtatRobot* figer();
-
     void afficher() const;
     static EnChargeFacePlot* getInstance();
 
 private:
     EnChargeFacePlot();
     static EnChargeFacePlot * _singletonInst;
-    EnChargeFacePlot(EnChargeFacePlot const&);
-
 };
 
 #endif

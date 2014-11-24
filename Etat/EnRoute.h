@@ -9,7 +9,6 @@ class EnRoute : public virtual EtatRobot
 {
     public:
         EnRoute();
-
     private:
 };
 
