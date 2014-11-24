@@ -1,7 +1,6 @@
 #ifndef ELEMENTAREPRESENTER_H
 #define ELEMENTAREPRESENTER_H
 #include "Afficheur.h"
-#include "AfficheurDefault.h"
 
 class ElementARepresenter
 {

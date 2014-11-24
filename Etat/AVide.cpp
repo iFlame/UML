@@ -36,7 +36,7 @@ EtatRobot* AVide::rencontrerPlot(){
   * Affichage de l'état AVide.
   */
 void AVide::afficher() const{
-    cout << "Robot dans l'état à vide." << endl;
+    cout << "Le robot est dans l'etat a vide." << endl;
 }
 
 

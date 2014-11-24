@@ -22,6 +22,8 @@ public :
     class WrongStatementEvaluerPlot {};
     class WrongStatementFiger {};
     class WrongStatementRepartir {};
+    class WrongStatementSaisir {};
+
 
     EtatRobot();
 
@@ -34,6 +36,8 @@ public :
     virtual EtatRobot* evaluerPlot();
     virtual EtatRobot* figer();
     virtual EtatRobot* repartir();
+    virtual EtatRobot* saisir();
+    static EtatRobot* initialisation();
 
 };
 

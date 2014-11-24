@@ -28,5 +28,5 @@ EtatRobot* EnCharge::figer() {
 * Affichage de l'état EnCharge.
 */
 void EnCharge::afficher() const{
-    cout << "Robot dans l'état en charge." << endl;
+    cout << "Le robot est dans l'etat en charge." << endl;
 }

@@ -11,6 +11,7 @@
 #include <iostream>
 #include "Position.h"
 #include "Plot.h"
+#include "Objet.h"
 #include "../Etat/EtatRobot.h"
 #include "../Etat/AVide.h"
 #include "../Afficher/ElementARepresenter.h"
@@ -23,8 +24,10 @@ class Robot : public ElementARepresenter {
 private:
     EtatRobot *etat;
     char direction;
-    Position pos;
-
+    Position* pos;
+    string ordre;
+    Objet* objet;
+    Plot* plot;
 public :
     //Robot(char, EtatRobot*, Position);
 Robot();
@@ -34,11 +37,17 @@ Robot();
     void avancer(int, int);
     void poser();
     void peser();
-    void rencontrerPlot(Plot);
+    void rencontrerPlot(Plot*);
     void evaluerPlot();
     void figer();
     void repartir();
+    void saisir(Objet*);
     char getDirection();
+    string getOrdre();
+    Position* getPosition();
+    Objet* getObjet();
+    Plot* getPlot();
+
 };
 
 #endif

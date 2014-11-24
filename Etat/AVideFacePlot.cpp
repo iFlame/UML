@@ -29,6 +29,6 @@ EtatRobot* AVideFacePlot::figer() {
 * Affichage de l'état AVideFacePlot.
 */
 void AVideFacePlot::afficher() const{
-    cout << "Robot dans l'état à vide face à plot." << endl;
+    cout << "Le robot est dans l'etat a vide face a plot." << endl;
 }
 

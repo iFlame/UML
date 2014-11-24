@@ -10,29 +10,48 @@
 //Robot::Robot(char newDirection, EtatRobot* etatRobot, Position position) : direction(newDirection), etat(etatRobot), pos(position) { }
 Robot::Robot()
 {
-    attacherAfficheur(new AfficheurDefault(/*this*/));
-    etat=AVide::getInstance();
+    attacherAfficheur(NULL);
+    etat=EtatRobot::initialisation();
     this->direction='E';
-    pos=Position(0,0);
+    pos=new Position(0,0);
+    objet=NULL;
+    plot=NULL;
 }
 
 void Robot::tourner(char direction)
 {
     try {
-        etat->tourner();
-        if(direction == 'E' || direction == 'N' || direction == 'O' || direction == 'S' ){
+        ordre="tourner";
+        if(direction == 'E' || direction == 'N' || direction == 'O' || direction == 'S'||this->direction!=direction ){
+            etat=etat->tourner();
             this->direction=direction;
+            plot=NULL;
+            notifier();
         }
+        else throw EtatRobot::WrongStatementTourner();
     } catch (EtatRobot::WrongStatementTourner) {
         cout << "Erreur le robot ne peut pas tourner." << endl;
     }
 }
-
+void Robot::saisir(Objet* obj)
+{
+    try {
+        ordre="saisir";
+        etat=etat->saisir();
+        this->objet=obj;
+        notifier();
+    } catch (EtatRobot::WrongStatementSaisir) {
+        cout << "Erreur le robot ne peut pas tourner." << endl;
+    }
+}
 
 EtatRobot* Robot::getEtat() {
     return etat;
 }
 
+Objet* Robot::getObjet() {
+    return objet;
+}
 
 void Robot::afficher() {
     etat->afficher();
@@ -40,8 +59,10 @@ void Robot::afficher() {
 
 void Robot::poser() {
     try {
-        etat->poser();
-
+        ordre="poser";
+        etat=etat->poser();
+        this->objet=NULL;
+        notifier();
     } catch (EtatRobot::WrongStatementPoser) {
         cout << "Erreur le robot ne peut pas poser." << endl;
     }
@@ -51,9 +72,11 @@ void Robot::poser() {
 void Robot::avancer(int x,int y)
 {
     try {
-        etat->avancer();
-        pos.setX(x);
-        pos.setY(y);
+        ordre="avancer";
+        etat=etat->avancer();
+        pos->setX(x);
+        pos->setY(y);
+        notifier();
     } catch (EtatRobot::WrongStatementAvancer) {
         cout << "Erreur le robot ne peut pas avancer." << endl;
     }
@@ -63,16 +86,22 @@ void Robot::avancer(int x,int y)
 void Robot::peser()
 {
     try {
-        etat->peser();
+        ordre="peser";
+        etat=etat->peser();
+        notifier();
+        cout<<"L'objet pese "<< objet->getPoids();
 
     } catch (EtatRobot::WrongStatementPeser) {
         cout << "Erreur le robot ne peut pas peser." << endl;
     }
 }
-void Robot::rencontrerPlot(Plot p)
+void Robot::rencontrerPlot(Plot* p)
 {
     try {
-        etat->rencontrerPlot();
+        ordre="rencontrerPlot";
+        etat=etat->rencontrerPlot();
+        plot=p;
+        notifier();
 
     } catch (EtatRobot::WrongStatementRencontrerPlot) {
         cout << "Erreur le robot ne peut pas rencontrer de plot." << endl;
@@ -81,8 +110,10 @@ void Robot::rencontrerPlot(Plot p)
 void Robot::evaluerPlot()
 {
     try {
-        etat->evaluerPlot();
-
+        ordre = "evaluer";
+        etat=etat->evaluerPlot();
+        notifier();
+        cout<<"Le plot est de hauteur "<< plot->getHauteur();
     } catch (EtatRobot::WrongStatementEvaluerPlot) {
         cout << "Erreur le robot ne peut pas evaluer de plot." << endl;
     }
@@ -90,7 +121,9 @@ void Robot::evaluerPlot()
 void Robot::figer()
 {
     try {
-        etat->figer();
+        ordre = "figer";
+        etat=etat->figer();
+        notifier();
 
     } catch (EtatRobot::WrongStatementFiger) {
         cout << "Erreur le robot ne peut pas se figer." << endl;
@@ -99,7 +132,8 @@ void Robot::figer()
 void Robot::repartir()
 {
     try {
-        etat->repartir();
+        etat=etat->repartir();
+        notifier();
 
     } catch (EtatRobot::WrongStatementRepartir) {
         cout << "Erreur le robot ne peut pas repartir." << endl;
@@ -108,4 +142,14 @@ void Robot::repartir()
 
 char Robot::getDirection(){
     return direction;
+}
+
+string Robot::getOrdre(){
+    return ordre;
+}
+Position* Robot::getPosition(){
+    return pos;
+}
+Plot* Robot::getPlot(){
+    return plot;
 }

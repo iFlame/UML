@@ -12,14 +12,14 @@ EnChargeFacePlot * EnChargeFacePlot::getInstance() {
 }
 
 EtatRobot* EnChargeFacePlot::tourner(){
-    return new EnChargeFacePlot;
+    return EnCharge::getInstance();
 }
 
 /**
 * Affichage de l'état EnChargeFacePlot.
 */
 void EnChargeFacePlot::afficher() const{
-    cout << "Robot dans l'état en charge face à plot." << endl;
+    cout << "Le Robot dans l'etat en charge face a plot." << endl;
 }
 EtatRobot* EnChargeFacePlot::figer() {
     Figer::setEtat(EnChargeFacePlot::getInstance());

@@ -18,5 +18,5 @@ EtatRobot* Figer::repartir(){
 * Affichage de l'état Figer.
 */
 void Figer::afficher() const{
-    cout << "Robot dans l'état figer." << endl;
+    cout << "Le robot est dans l'etat figer." << endl;
 }

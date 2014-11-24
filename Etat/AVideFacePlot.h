@@ -23,7 +23,6 @@ public:
 
     static AVideFacePlot * getInstance();
     EtatRobot* figer();
-
     EtatRobot* tourner();
     EtatRobot* evaluerPlot();
     EtatRobot* saisir();
