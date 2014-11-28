@@ -20,7 +20,7 @@
 1416851457 source:c:\users\user\workspace_codeblocks\uml\uml\baserobot\robot.cpp
 	"Robot.h"
 
-1416836120 source:c:\users\user\workspace_codeblocks\uml\uml\main.cpp
+1416851563 source:c:\users\user\workspace_codeblocks\uml\uml\main.cpp
 	<iostream>
 	"BaseRobot/Plot.h"
 	"BaseRobot/Robot.h"
@@ -88,7 +88,7 @@
 	"EtatRobot.h"
 	"AVide.h"
 
-1416837092 source:c:\users\user\workspace_codeblocks\uml\uml\etat\figer.cpp
+1417188200 source:c:\users\user\workspace_codeblocks\uml\uml\etat\figer.cpp
 	"Figer.h"
 
 1416851445 c:\users\user\workspace_codeblocks\uml\uml\etat\figer.h
@@ -248,4 +248,74 @@
 1416774389 c:\users\user\workspace_codeblocks\uml\uml\\afficher\afficheurdefault.h
 	"Afficheur.h"
 	<iostream>
+
+1417187109 source:c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.cpp
+	"Avancer.h"
+
+1417188106 c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.h
+	"Commande.h"
+
+1417187806 c:\users\user\workspace_codeblocks\uml\uml\commande\commande.h
+
+1417187607 source:c:\users\user\workspace_codeblocks\uml\uml\commande\commande.cpp
+	"Commande.h"
+
+1417187389 source:c:\users\user\workspace_codeblocks\uml\uml\commande\figer.cpp
+	"Figer.h"
+
+1417188152 c:\users\user\workspace_codeblocks\uml\uml\commande\figer.h
+	"Commande.h"
+
+1417187300 source:c:\users\user\workspace_codeblocks\uml\uml\commande\peserobjet.cpp
+	"PeserObjet.h"
+
+1417187761 c:\users\user\workspace_codeblocks\uml\uml\commande\peserobjet.h
+	"Commande.h"
+
+1417187267 source:c:\users\user\workspace_codeblocks\uml\uml\commande\poser.cpp
+	"Poser.h"
+
+1417187761 c:\users\user\workspace_codeblocks\uml\uml\commande\poser.h
+	"Commande.h"
+
+1417187333 source:c:\users\user\workspace_codeblocks\uml\uml\commande\rencontrerobst.cpp
+	"RencontrerObst.h"
+
+1417187761 c:\users\user\workspace_codeblocks\uml\uml\commande\rencontrerobst.h
+	"Commande.h"
+
+1417187447 source:c:\users\user\workspace_codeblocks\uml\uml\commande\repartir.cpp
+	"Repartir.h"
+
+1417187760 c:\users\user\workspace_codeblocks\uml\uml\commande\repartir.h
+	"Commande.h"
+
+1417187195 source:c:\users\user\workspace_codeblocks\uml\uml\commande\saisir.cpp
+	"Saisir.h"
+
+1417187760 c:\users\user\workspace_codeblocks\uml\uml\commande\saisir.h
+	"Commande.h"
+
+1417187147 source:c:\users\user\workspace_codeblocks\uml\uml\commande\tourner.cpp
+	"Tourner.h"
+
+1417187760 c:\users\user\workspace_codeblocks\uml\uml\commande\tourner.h
+	"Commande.h"
+
+1417187511 source:c:\users\user\workspace_codeblocks\uml\uml\etat\evaluerobst.cpp
+	"EvaluerObst.h"
+
+1417187511 c:\users\user\workspace_codeblocks\uml\uml\etat\evaluerobst.h
+
+1417188509 source:c:\users\user\workspace_codeblocks\uml\uml\commande\evaluerobst.cpp
+	"EvaluerObst.h"
+
+1417188558 c:\users\user\workspace_codeblocks\uml\uml\commande\evaluerobst.h
+	"Commande.h"
+
+1417188236 source:c:\users\user\workspace_codeblocks\uml\uml\commande\figerc.cpp
+	"FigerC.h"
+
+1417188257 c:\users\user\workspace_codeblocks\uml\uml\commande\figerc.h
+	"Commande.h"
 

@@ -1,6 +1,7 @@
 #include "Figer.h"
 using namespace std;
 
+
 Figer::Figer() {}
 Figer * Figer::_singletonInst = new Figer();
 Figer * Figer::getInstance() {
