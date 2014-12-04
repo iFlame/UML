@@ -1,6 +1,11 @@
 #include "Tourner.h"
 
-Tourner::Tourner()
-{
-    //ctor
+void Tourner::execute(){
+    oldDirection = robot->getDirection();
+    robot->tourner(direction);
 }
+
+void Tourner::desexecute() {
+    robot->tourner(oldDirection);
+}
+
