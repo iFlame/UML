@@ -45,6 +45,28 @@
 		<Unit filename="BaseRobot/Position.h" />
 		<Unit filename="BaseRobot/Robot.cpp" />
 		<Unit filename="BaseRobot/Robot.h" />
+		<Unit filename="Commande/Avancer.cpp" />
+		<Unit filename="Commande/Avancer.h" />
+		<Unit filename="Commande/Commande.cpp" />
+		<Unit filename="Commande/Commande.h" />
+		<Unit filename="Commande/EvaluerObst.cpp" />
+		<Unit filename="Commande/EvaluerObst.h" />
+		<Unit filename="Commande/FigerC.cpp" />
+		<Unit filename="Commande/FigerC.h" />
+		<Unit filename="Commande/LecteurFichier.cpp" />
+		<Unit filename="Commande/LecteurFichier.h" />
+		<Unit filename="Commande/PeserObjet.cpp" />
+		<Unit filename="Commande/PeserObjet.h" />
+		<Unit filename="Commande/Poser.cpp" />
+		<Unit filename="Commande/Poser.h" />
+		<Unit filename="Commande/RencontrerObst.cpp" />
+		<Unit filename="Commande/RencontrerObst.h" />
+		<Unit filename="Commande/Repartir.cpp" />
+		<Unit filename="Commande/Repartir.h" />
+		<Unit filename="Commande/Saisir.cpp" />
+		<Unit filename="Commande/Saisir.h" />
+		<Unit filename="Commande/Tourner.cpp" />
+		<Unit filename="Commande/Tourner.h" />
 		<Unit filename="Etat/AVide.cpp" />
 		<Unit filename="Etat/AVide.h" />
 		<Unit filename="Etat/AVideFacePlot.cpp" />
@@ -59,6 +81,8 @@
 		<Unit filename="Etat/EtatRobot.h" />
 		<Unit filename="Etat/Figer.cpp" />
 		<Unit filename="Etat/Figer.h" />
+		<Unit filename="Outil/List.h" />
+		<Unit filename="Outil/Stack.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

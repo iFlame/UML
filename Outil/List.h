@@ -12,7 +12,6 @@
 #include <cassert>
 using namespace std;
 
-#include "common_defs.h"
 
 // Forward declaration of List, needed by the forward declaration of operator<<
 template <typename ELEM>
@@ -26,9 +25,9 @@ template <typename ELEM>
 class List
 {
 private:
-    
-   // The list Cell type 
-    
+
+   // The list Cell type
+
     struct Cell
     {
         ELEM val;
@@ -37,7 +36,7 @@ private:
         ~Cell() {delete next;} // Recursive destructor
     };
 
-    // 
+    //
     Cell *head;         // Pointer to first cell
     Cell *tail;         // Pointer to last cell
 
@@ -52,8 +51,8 @@ public:
 
     // Destroy first cell (recursive destruction)
     // It's not necessary to be virtual, but if it is not we get a
-    // warning in Queu ! 
-    virtual ~List() {delete head;} 
+    // warning in Queu !
+    virtual ~List() {delete head;}
 
     // Copy constructor and copy assignment
 
@@ -61,28 +60,28 @@ public:
     List& operator=(const List&);
 
     // Accessor ?
-    
+
     bool is_empty() const {return head == 0;}
 
     // Adding elements to the list
-    
+
     void append(ELEM);  // at the end
     void prepend(ELEM); // at the beginning
     void insert(ELEM);  // at its place, according to ELEM::operator<
 
     // Removing elements from the list en tete de liste
-    
+
     ELEM get_first();
 
     // Display (obey the g++ warning message and add <>!)
-    
+
     friend ostream& operator<< <>(ostream&, const List&);
 };
 
 //-----------------------------------------------------------------------
 // Copy constructor and copy assignment
 //-----------------------------------------------------------------------
-    
+
 template <typename ELEM>
 List<ELEM>::List(const List& l)
     : head(0), tail(0)
@@ -101,7 +100,7 @@ List<ELEM>& List<ELEM>::operator=(const List& l)
         for (Cell *pcell = l.head; pcell != 0; pcell = pcell->next)
             append(pcell->val);
     }
-    return *this;       
+    return *this;
 }
 
 //-----------------------------------------------------------------------

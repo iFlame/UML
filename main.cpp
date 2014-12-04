@@ -6,6 +6,7 @@ using namespace std;
 #include "BaseRobot/Robot.h"
 #include "BaseRobot/Position.h"
 #include "Afficher/AfficheurDefault.h"
+#include "Commande/LecteurFichier.h"
 int main() {
 
     cout << "Test plot :" << endl;
@@ -31,6 +32,8 @@ int main() {
     robot->tourner('S');
     robot->figer();
     robot->repartir();
+    LecteurFichier* lecteur=new LecteurFichier("commande.txt");
+    lecteur->execute();
     return 0;
 
 }

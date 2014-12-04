@@ -2,5 +2,5 @@
 
 Commande::Commande()
 {
-    //ctor
+   // commande["AVANCER"];
 }
