@@ -11,10 +11,11 @@ class LecteurFichier
 {
     private:
         istream* flux;
-        Stack<Commande> listeCommande;
+        Stack<Commande*> listeCommande;
+        Commande* commande;
     public:
-        LecteurFichier(string nomFichier) : flux(new ifstream(nomFichier.c_str(),ios::in)){}
-        LecteurFichier(istream* flux=&cin) : flux(flux){}
+        LecteurFichier(string nomFichier) : flux(new ifstream(nomFichier.c_str(),ios::in)){commande=new Commande();}
+        LecteurFichier(istream* flux=&cin) : flux(flux){commande=new Commande();}
         void execute();
         void desexecute();
 

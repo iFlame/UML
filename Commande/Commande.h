@@ -10,6 +10,8 @@ class Commande
     public:
         Commande();
         map<string,Commande> commande;
+        virtual void execute();
+        Commande* creerCommande(string);
     protected:
     private:
 };
