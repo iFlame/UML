@@ -7,6 +7,7 @@ class EvaluerObst : public Commande
 {
     public:
         Commande* constructeur(Robot* robot) const { return new EvaluerObst(robot); }
+        void execute();
     protected:
     private:
         EvaluerObst(Robot* robot) : robot(robot) {} ;

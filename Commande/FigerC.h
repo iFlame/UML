@@ -8,6 +8,7 @@ class FigerC : public Commande
 {
     public:
         Commande* constructeur(Robot* robot) const { return new FigerC(robot); }
+        void execute();
     protected:
     private:
         Robot* robot;

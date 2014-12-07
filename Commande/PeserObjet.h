@@ -7,6 +7,7 @@ class PeserObjet : public Commande
 {
     public:
         Commande* constructeur(Robot* robot) const { return new PeserObjet(robot); }
+        void execute();
     protected:
     private:
         Robot* robot;

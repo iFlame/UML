@@ -8,6 +8,7 @@ class Poser : public Commande
 {
     public:
         Commande* constructeur(Robot* robot) const { return new Poser(robot); }
+        void execute();
     protected:
     private:
         Robot* robot;
