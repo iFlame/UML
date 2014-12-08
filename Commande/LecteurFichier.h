@@ -4,12 +4,14 @@
 #include <fstream>
 #include <string>
 #include "../Outil/Stack.h"
-#include "Commande.h"
-using namespace std;
+#include "../BaseRobot/Robot.h"
 
+using namespace std;
+class Commande;
 class LecteurFichier
 {
     private:
+        Robot* robot;
         istream* flux;
         Stack<Commande*> listeCommande;
         Commande* commande;
@@ -17,8 +19,8 @@ class LecteurFichier
         string arg;
         string arg2;
         string arg3;
-        LecteurFichier(string nomFichier) : flux(new ifstream(nomFichier.c_str(),ios::in)){commande=new Commande();}
-        LecteurFichier(istream* flux=&cin) : flux(flux){commande=new Commande();}
+        LecteurFichier(string nomFichier, Robot* rob);
+        LecteurFichier(istream* flux, Robot* rob);
         void execute();
         void desexecute();
 

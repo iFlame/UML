@@ -25,14 +25,14 @@ int main() {
     Robot* robot=new Robot();
     AfficheurDefault* affich=new AfficheurDefault(robot);
     robot->attacherAfficheur(affich);
-    robot->tourner('O');
+/*    robot->tourner('O');
     robot->rencontrerPlot(plot);
     robot->evaluerPlot();
     robot->saisir(objet);
     robot->tourner('S');
     robot->figer();
-    robot->repartir();
-    LecteurFichier* lecteur=new LecteurFichier("commande.txt");
+    robot->repartir();*/
+    LecteurFichier* lecteur=new LecteurFichier("commande.txt",robot);
     lecteur->execute();
     return 0;
 

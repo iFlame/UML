@@ -1,6 +1,8 @@
 #include "LecteurFichier.h"
 #include <algorithm>
-
+#include "Commande.h"
+LecteurFichier::LecteurFichier(string nomFichier, Robot* rob) : flux(new ifstream(nomFichier.c_str(),ios::in)),robot(rob){commande=new Commande(robot,this);}
+LecteurFichier::LecteurFichier(istream* flux, Robot* rob) : flux(flux), robot(rob){commande=new Commande(robot,this);}
 void LecteurFichier::execute(){
     if (flux){
         string ligne;
@@ -13,7 +15,9 @@ void LecteurFichier::execute(){
             iss>>arg;
             iss>>arg2;
             iss>>arg3;
+
             commandeAExec=commande->creerCommande(arg);// on l'affiche
+
             commandeAExec->execute();
             listeCommande.push(commandeAExec);
         }

@@ -3,8 +3,15 @@ Avancer Avancer::avancer("x");
 Avancer::Avancer(string x){
     Commande("AVANCER");
 }
-Commande* Avancer::constructeurVirtuel(Robot* bot, LecteurFichier* lf){
-    return new Avancer(Robot* bot, LecteurFichier* lf);
+
+Commande* Avancer::constructeurVirtuel(){
+        cout<<"k";
+
+    Avancer* ava =new Avancer(robot,lf);
+    ava->setX(StringToNumber(lf->arg2));
+    ava->setY(StringToNumber(lf->arg3));
+
+    return ava;
 }
 
 
@@ -16,4 +23,17 @@ void Avancer::execute(){
 
 void Avancer::desexecute() {
     robot->avancer(oldX,oldY);
+}
+
+void Avancer::setX(int i){
+    newX=i;
+}
+void Avancer::setY(int i){
+    newY=i;
+}
+
+int Avancer::StringToNumber ( const string &Text ){
+	stringstream ss(Text);
+	int result;
+	return ss >> result ? result : 0;
 }

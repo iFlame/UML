@@ -1,8 +1,7 @@
 #ifndef _AVANCER_H
 #define _AVANCER_H
 #include "Commande.h"
-#include "../BaseRobot/Robot.h"
-#include "LecteurFichier.h"
+
 
 class Avancer : public Commande
 {
@@ -12,14 +11,17 @@ class Avancer : public Commande
         void desexecute();
         static Avancer avancer;
         Avancer(string x);
-        virtual Commande* constructeurVirtuel();
-                Avancer() {} ;
-//Robot* bot, LecteurFichier* lf) : robot(bot), lf(lf)
+        Commande* constructeurVirtuel();
+        Avancer(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);} ;
+        void setX(int);
+        void setY(int);
+        int StringToNumber ( const string& );
+void test(){cout<<"avancer";}
+
 
     protected:
     private:
-        Robot* robot;
-        LecteurFichier* lf;
+
         int newX;
         int newY;
         int oldX;
