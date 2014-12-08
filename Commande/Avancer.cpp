@@ -3,8 +3,8 @@ Avancer Avancer::avancer("x");
 Avancer::Avancer(string x){
     Commande("AVANCER");
 }
-Commande* Avancer::constructeurVirtuel(){
-    return new Avancer();
+Commande* Avancer::constructeurVirtuel(Robot* bot, LecteurFichier* lf){
+    return new Avancer(Robot* bot, LecteurFichier* lf);
 }
 
 
