@@ -1,7 +1,8 @@
 #ifndef COMMANDE_H
 #define COMMANDE_H
 #include <map>
-
+#include <string>
+#include <sstream>
 using namespace std;
 
 
@@ -9,14 +10,12 @@ using namespace std;
 class Commande
 {
     public:
-        string arg;
-        string arg2:
-        string arg3;
 
         Commande();
         static map<string,Commande*>& commande();
+        Commande* constructeurVirtuel();
         virtual void execute();
-        Commande* creerCommande(string);
+        static Commande* creerCommande(string);
     protected:
     private:
 };

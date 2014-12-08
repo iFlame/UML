@@ -14,6 +14,9 @@ class LecteurFichier
         Stack<Commande*> listeCommande;
         Commande* commande;
     public:
+        string arg;
+        string arg2;
+        string arg3;
         LecteurFichier(string nomFichier) : flux(new ifstream(nomFichier.c_str(),ios::in)){commande=new Commande();}
         LecteurFichier(istream* flux=&cin) : flux(flux){commande=new Commande();}
         void execute();

@@ -20,7 +20,7 @@
 1416851457 source:c:\users\user\workspace_codeblocks\uml\uml\baserobot\robot.cpp
 	"Robot.h"
 
-1417595417 source:c:\users\user\workspace_codeblocks\uml\uml\main.cpp
+1417688697 source:c:\users\user\workspace_codeblocks\uml\uml\main.cpp
 	<iostream>
 	"BaseRobot/Plot.h"
 	"BaseRobot/Robot.h"
@@ -250,17 +250,21 @@
 	"Afficheur.h"
 	<iostream>
 
-1417187109 source:c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.cpp
 	"Avancer.h"
 
-1417188106 c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
-1417688587 c:\users\user\workspace_codeblocks\uml\uml\commande\commande.h
+1418032995 c:\users\user\workspace_codeblocks\uml\uml\commande\commande.h
 	<map>
+	<string>
+	<sstream>
 
-1417688638 source:c:\users\user\workspace_codeblocks\uml\uml\commande\commande.cpp
+1418031435 source:c:\users\user\workspace_codeblocks\uml\uml\commande\commande.cpp
 	"Commande.h"
+	<algorithm>
 
 1417187389 source:c:\users\user\workspace_codeblocks\uml\uml\commande\figer.cpp
 	"Figer.h"
@@ -268,58 +272,66 @@
 1417188152 c:\users\user\workspace_codeblocks\uml\uml\commande\figer.h
 	"Commande.h"
 
-1417187300 source:c:\users\user\workspace_codeblocks\uml\uml\commande\peserobjet.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\peserobjet.cpp
 	"PeserObjet.h"
 
-1417187761 c:\users\user\workspace_codeblocks\uml\uml\commande\peserobjet.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\peserobjet.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
-1417187267 source:c:\users\user\workspace_codeblocks\uml\uml\commande\poser.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\poser.cpp
 	"Poser.h"
 
-1417187761 c:\users\user\workspace_codeblocks\uml\uml\commande\poser.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\poser.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
-1417187333 source:c:\users\user\workspace_codeblocks\uml\uml\commande\rencontrerobst.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\rencontrerobst.cpp
 	"RencontrerObst.h"
 
-1417187761 c:\users\user\workspace_codeblocks\uml\uml\commande\rencontrerobst.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\rencontrerobst.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
-1417187447 source:c:\users\user\workspace_codeblocks\uml\uml\commande\repartir.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\repartir.cpp
 	"Repartir.h"
 
-1417187760 c:\users\user\workspace_codeblocks\uml\uml\commande\repartir.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\repartir.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
-1417187195 source:c:\users\user\workspace_codeblocks\uml\uml\commande\saisir.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\saisir.cpp
 	"Saisir.h"
 
-1417187760 c:\users\user\workspace_codeblocks\uml\uml\commande\saisir.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\saisir.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
-1417187147 source:c:\users\user\workspace_codeblocks\uml\uml\commande\tourner.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\tourner.cpp
 	"Tourner.h"
 
-1417187760 c:\users\user\workspace_codeblocks\uml\uml\commande\tourner.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\tourner.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
 1417187511 source:c:\users\user\workspace_codeblocks\uml\uml\etat\evaluerobst.cpp
 	"EvaluerObst.h"
 
 1417187511 c:\users\user\workspace_codeblocks\uml\uml\etat\evaluerobst.h
 
-1417188509 source:c:\users\user\workspace_codeblocks\uml\uml\commande\evaluerobst.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\evaluerobst.cpp
 	"EvaluerObst.h"
 
-1417188558 c:\users\user\workspace_codeblocks\uml\uml\commande\evaluerobst.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\evaluerobst.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
-1417188236 source:c:\users\user\workspace_codeblocks\uml\uml\commande\figerc.cpp
+1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\figerc.cpp
 	"FigerC.h"
 
-1417188257 c:\users\user\workspace_codeblocks\uml\uml\commande\figerc.h
+1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\figerc.h
 	"Commande.h"
+	"../BaseRobot/Robot.h"
 
 1417188662 source:c:\users\user\workspace_codeblocks\uml\uml\commande\invocateur.cpp
 	"Invocateur.h"
@@ -335,10 +347,11 @@
 	<iostream>
 	<cassert>
 
-1417687525 source:c:\users\user\workspace_codeblocks\uml\uml\commande\lecteurfichier.cpp
+1418031609 source:c:\users\user\workspace_codeblocks\uml\uml\commande\lecteurfichier.cpp
 	"LecteurFichier.h"
+	<algorithm>
 
-1417687068 c:\users\user\workspace_codeblocks\uml\uml\commande\lecteurfichier.h
+1418031111 c:\users\user\workspace_codeblocks\uml\uml\commande\lecteurfichier.h
 	<iostream>
 	<fstream>
 	<string>
