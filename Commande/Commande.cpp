@@ -7,7 +7,7 @@ Commande::Commande()
 
 void Commande::execute(){}
 
-Commande(string d){
+Commande::Commande(string d){
     commande()[d]=this;
 }
 

@@ -3,7 +3,7 @@ Avancer Avancer::avancer("x");
 Avancer::Avancer(string x){
     Commande("AVANCER");
 }
-Commande* constructeurVirtuel(){
+Commande* Avancer::constructeurVirtuel(){
     return new Avancer();
 }
 

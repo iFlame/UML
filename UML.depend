@@ -250,21 +250,21 @@
 	"Afficheur.h"
 	<iostream>
 
-1418027321 source:c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.cpp
+1418042246 source:c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.cpp
 	"Avancer.h"
 
-1418027321 c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.h
+1418042471 c:\users\user\workspace_codeblocks\uml\uml\commande\avancer.h
 	"Commande.h"
 	"../BaseRobot/Robot.h"
+	"LecteurFichier.h"
 
-1418032995 c:\users\user\workspace_codeblocks\uml\uml\commande\commande.h
+1418041747 c:\users\user\workspace_codeblocks\uml\uml\commande\commande.h
 	<map>
 	<string>
 	<sstream>
 
-1418031435 source:c:\users\user\workspace_codeblocks\uml\uml\commande\commande.cpp
+1418042471 source:c:\users\user\workspace_codeblocks\uml\uml\commande\commande.cpp
 	"Commande.h"
-	<algorithm>
 
 1417187389 source:c:\users\user\workspace_codeblocks\uml\uml\commande\figer.cpp
 	"Figer.h"
