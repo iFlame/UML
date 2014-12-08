@@ -1,6 +1,5 @@
 #include "Poser.h"
 
-Poser::Poser()
-{
-    //ctor
+void Poser::execute() {
+    robot->poser();
 }

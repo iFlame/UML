@@ -1,6 +1,5 @@
 #include "FigerC.h"
 
-FigerC::FigerC()
-{
-    //ctor
+void FigerC::execute() {
+    robot->figer();
 }

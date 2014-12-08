@@ -1,6 +1,5 @@
 #include "Repartir.h"
 
-Repartir::Repartir()
-{
-    //ctor
+void Repartir::execute() {
+    robot->repartir();
 }

@@ -1,6 +1,5 @@
 #include "EvaluerObst.h"
 
-EvaluerObst::EvaluerObst()
-{
-    //ctor
+void EvaluerObst::execute() {
+    robot->evaluerPlot();
 }

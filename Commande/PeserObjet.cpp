@@ -1,6 +1,5 @@
 #include "PeserObjet.h"
 
-PeserObjet::PeserObjet()
-{
-    //ctor
+void PeserObjet::execute() {
+    robot->peser();
 }
