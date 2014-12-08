@@ -10,10 +10,12 @@ using namespace std;
 class Commande
 {
     public:
+        Commande(string);
+
 
         Commande();
         static map<string,Commande*>& commande();
-        Commande* constructeurVirtuel();
+        virtual Commande* constructeurVirtuel();
         virtual void execute();
         static Commande* creerCommande(string);
     protected:

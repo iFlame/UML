@@ -4,8 +4,12 @@ Commande::Commande()
 {
 
 }
+
 void Commande::execute(){}
 
+Commande(string d){
+    commande()[d]=this;
+}
 
 Commande* Commande::creerCommande(string comm){
     return Commande::commande()[comm]->constructeurVirtuel();
