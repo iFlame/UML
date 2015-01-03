@@ -2,17 +2,26 @@
 #define RENCONTREROBST_H
 #include "Commande.h"
 #include "../BaseRobot/Robot.h"
+#include "../BaseRobot/Plot.h"
+
 
 
 class RencontrerObst : public Commande
 {
     public:
-        Commande* constructeur(Robot* robot) const { return new RencontrerObst(robot); }
         void execute();
+        void desexecute();
+        static RencontrerObst rencontrerObst;
+        RencontrerObst(string x);
+        Commande* constructeurVirtuel();
+        RencontrerObst(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        void test(){cout<<"RencontrerObst";}
+        void setHauteur(int);
+        int StringToNumber ( const string& );
+
     protected:
     private:
-        Robot* robot;
-        RencontrerObst(Robot* robot) : robot(robot) {} ;
+        int hauteur;
 
 };
 

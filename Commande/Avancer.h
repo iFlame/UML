@@ -1,6 +1,7 @@
 #ifndef _AVANCER_H
 #define _AVANCER_H
 #include "Commande.h"
+#include "../BaseRobot/Position.h"
 
 
 class Avancer : public Commande
@@ -12,11 +13,11 @@ class Avancer : public Commande
         static Avancer avancer;
         Avancer(string x);
         Commande* constructeurVirtuel();
-        Avancer(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);} ;
+        Avancer(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
         void setX(int);
         void setY(int);
         int StringToNumber ( const string& );
-void test(){cout<<"avancer";}
+        void test(){cout<<"avancer";}
 
 
     protected:

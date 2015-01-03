@@ -18,8 +18,6 @@ int main() {
     cout << pos.getX() << endl;
     cout << pos.getY() << endl;
 
-    Objet* objet=new Objet(5);
-
     cout << "Test Robot" << endl;
 
     Robot* robot=new Robot();

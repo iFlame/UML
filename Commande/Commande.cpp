@@ -7,14 +7,11 @@ Commande::Commande()
 
 void Commande::execute(){}
 
-Commande::Commande(string d){
-    commande()[d]=this;
+Commande::Commande(string d,Commande* objet){
+    commande()[d]=objet;
 }
 
 Commande* Commande::creerCommande(string comm){
-
-    commande()[comm]->test();
-
     return Commande::commande()[comm]->constructeurVirtuel();
 }
 
@@ -22,14 +19,16 @@ map<string,Commande*>& Commande::commande(){
     static map<string,Commande*>* commandeInscrite=new map<string,Commande*>;
     return *commandeInscrite;
 }
+map<string,istream*>& Commande::listeMacro(){
+    static map<string,istream*>* macroInscrite=new map<string,istream*>;
+    return *macroInscrite;
+}
 
 Commande* Commande::constructeurVirtuel(){
-    cout<<"llll";
-
     return new Commande();
 }
-void Commande::setRobot(Robot* robot){
-    robot=robot;
+void Commande::setRobot(Robot* robotn){
+    robot=robotn;
 }
 void Commande::setLecteur(LecteurFichier* lecte){
     lf=lecte;

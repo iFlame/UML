@@ -1,19 +1,19 @@
 #include "Avancer.h"
 Avancer Avancer::avancer("x");
 Avancer::Avancer(string x){
-    Commande("AVANCER");
+    Commande("AVANCER",this);
 }
 
 Commande* Avancer::constructeurVirtuel(){
-        cout<<"k";
-
+    robot->afficher();
     Avancer* ava =new Avancer(robot,lf);
+    ava->setRobot(robot);
+    ava->robot->afficher();
     ava->setX(StringToNumber(lf->arg2));
     ava->setY(StringToNumber(lf->arg3));
 
     return ava;
 }
-
 
 void Avancer::execute(){
     oldX = robot->getPosition()->getX();

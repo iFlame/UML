@@ -6,12 +6,15 @@
 class EvaluerObst : public Commande
 {
     public:
-        Commande* constructeur(Robot* robot) const { return new EvaluerObst(robot); }
         void execute();
+        void desexecute();
+        static EvaluerObst evaluerObst;
+        EvaluerObst(string x);
+        Commande* constructeurVirtuel();
+        EvaluerObst(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        void test(){cout<<"EvaluerObst";}
     protected:
     private:
-        EvaluerObst(Robot* robot) : robot(robot) {} ;
-        Robot* robot;
 };
 
 #endif // EVALUEROBST_H

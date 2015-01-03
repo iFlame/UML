@@ -7,13 +7,15 @@
 class Repartir : public Commande
 {
     public:
-        Commande* constructeur(Robot* robot) { return new Repartir(robot); }
         void execute();
+        void desexecute();
+        static Repartir repartir;
+        Repartir(string x);
+        Commande* constructeurVirtuel();
+        Repartir(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        void test(){cout<<"Repartir";}
     protected:
     private:
-        Robot* robot;
-        Repartir(Robot* robot) : robot(robot) {} ;
-
 };
 
 #endif // REPARTIR_H

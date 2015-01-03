@@ -2,15 +2,25 @@
 #define SAISIR_H
 #include "Commande.h"
 #include "../BaseRobot/Robot.h"
+#include "../BaseRobot/Objet.h"
+
 
 class Saisir : public Commande
 {
     public:
-        Commande* constructeur(Robot* robot) const { return new Saisir(robot); }
+        void execute();
+        void desexecute();
+        static Saisir saisir;
+        Saisir(string x);
+        Commande* constructeurVirtuel();
+        Saisir(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        void test(){cout<<"Saisir";}
+        void setPoids(int);
+        int StringToNumber ( const string& );
+
     protected:
     private:
-        Saisir(Robot* robot) : robot(robot) {} ;
-        Robot* robot;
+        int poids;
 
 };
 

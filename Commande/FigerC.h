@@ -7,12 +7,14 @@
 class FigerC : public Commande
 {
     public:
-        Commande* constructeur(Robot* robot) const { return new FigerC(robot); }
         void execute();
+        void desexecute();
+        static FigerC figer;
+        FigerC(string x);
+        Commande* constructeurVirtuel();
+        FigerC(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        void test(){cout<<"FigerC";}
     protected:
     private:
-        Robot* robot;
-        FigerC(Robot* robot) : robot(robot) {} ;
 };
-
 #endif // FIGER_H

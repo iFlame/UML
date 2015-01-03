@@ -7,13 +7,18 @@
 class Tourner : public Commande
 {
     public:
-        Commande* constructeur(Robot* robot, char direction) const { return new Tourner(robot,direction); }
         void execute();
         void desexecute();
+        static Tourner tourner;
+        Tourner(string x);
+        Commande* constructeurVirtuel();
+        Tourner(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        void test(){cout<<"Tourner";}
+        void setDir(char);
+        char StringToChar(const string &Text);
+
     protected:
     private:
-        Tourner(Robot* robot, char direction) : robot(robot), direction(direction) {};
-        Robot* robot;
         char direction;
         char oldDirection;
 };

@@ -2,17 +2,23 @@
 #define POSER_H
 #include "Commande.h"
 #include "../BaseRobot/Robot.h"
+#include "../BaseRobot/Objet.h"
 
 
 class Poser : public Commande
 {
     public:
-        Commande* constructeur(Robot* robot) const { return new Poser(robot); }
         void execute();
+        void desexecute();
+        static Poser poser;
+        Poser(string x);
+        Commande* constructeurVirtuel();
+        Poser(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        void test(){cout<<"Poser";}
     protected:
     private:
-        Robot* robot;
-        Poser(Robot* robot) : robot(robot) {};
+        Objet* objet;
 };
+
 
 #endif // POSER_H

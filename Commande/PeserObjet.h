@@ -6,12 +6,14 @@
 class PeserObjet : public Commande
 {
     public:
-        Commande* constructeur(Robot* robot) const { return new PeserObjet(robot); }
         void execute();
+        void desexecute();
+        static PeserObjet peserObjet;
+        PeserObjet(string x);
+        Commande* constructeurVirtuel();
+        PeserObjet(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        void test(){cout<<"PeserObjet";}
     protected:
     private:
-        Robot* robot;
-        PeserObjet(Robot* robot) : robot(robot) {};
 };
-
 #endif // PESEROBJET_H

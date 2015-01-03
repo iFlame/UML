@@ -21,6 +21,7 @@ class LecteurFichier
         string arg3;
         LecteurFichier(string nomFichier, Robot* rob);
         LecteurFichier(istream* flux, Robot* rob);
+        void execute(istream*);
         void execute();
         void desexecute();
 
