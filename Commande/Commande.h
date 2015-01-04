@@ -17,9 +17,9 @@ class Commande
     public:
         Commande(string,Commande*);
         Robot* robot;
-        LecteurFichier* lf;
+        Invocateur* lf;
         Commande();
-        Commande(Robot* bot, LecteurFichier* lf) : robot(bot), lf(lf){
+        Commande(Robot* bot, Invocateur* lf) : robot(bot), lf(lf){
 //impossible de faire un for each a cause de l'IDLE...
             commande()["AVANCER"]->setRobot(robot);
             commande()["AVANCER"]->setLecteur(lf);
@@ -51,7 +51,7 @@ class Commande
         virtual void execute();
         static Commande* creerCommande(string);
         void setRobot(Robot*);
-        void setLecteur(LecteurFichier*);
+        void setLecteur(Invocateur*);
         virtual void test();
 
     protected:

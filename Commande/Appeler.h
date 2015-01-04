@@ -14,7 +14,7 @@ class Appeler : public Commande
         static Appeler appeler;
         Appeler(string x);
         Commande* constructeurVirtuel();
-        Appeler(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        Appeler(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"appeler";}
         void setMacro(string);
 

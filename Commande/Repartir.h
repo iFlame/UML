@@ -12,7 +12,7 @@ class Repartir : public Commande
         static Repartir repartir;
         Repartir(string x);
         Commande* constructeurVirtuel();
-        Repartir(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        Repartir(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"Repartir";}
     protected:
     private:

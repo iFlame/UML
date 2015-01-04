@@ -12,7 +12,7 @@ class Tourner : public Commande
         static Tourner tourner;
         Tourner(string x);
         Commande* constructeurVirtuel();
-        Tourner(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        Tourner(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"Tourner";}
         void setDir(char);
         char StringToChar(const string &Text);

@@ -14,7 +14,7 @@ class RencontrerObst : public Commande
         static RencontrerObst rencontrerObst;
         RencontrerObst(string x);
         Commande* constructeurVirtuel();
-        RencontrerObst(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        RencontrerObst(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"RencontrerObst";}
         void setHauteur(int);
         int StringToNumber ( const string& );

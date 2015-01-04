@@ -15,7 +15,7 @@ class DefMacro : public Commande
         static DefMacro defMacro;
         DefMacro(string x);
         Commande* constructeurVirtuel();
-        DefMacro(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        DefMacro(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"DefMacro";}
         void setMacro(istream*);
         void setNomMacro(string);

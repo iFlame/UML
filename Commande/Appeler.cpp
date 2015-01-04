@@ -11,6 +11,7 @@ Commande* Appeler::constructeurVirtuel(){
     Appeler* ava =new Appeler(robot,lf);
     ava->setRobot(robot);
     ava->setMacro(lf->arg4);
+    ava->setLecteur(lf);
     return ava;
 }
 

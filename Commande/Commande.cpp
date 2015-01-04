@@ -31,8 +31,9 @@ Commande* Commande::constructeurVirtuel(){
 void Commande::setRobot(Robot* robotn){
     robot=robotn;
 }
-void Commande::setLecteur(LecteurFichier* lecte){
+void Commande::setLecteur(Invocateur* lecte){
     lf=lecte;
 }
 void Commande::test(){
-cout<<"ici";}
+    cout<<"ici";
+}

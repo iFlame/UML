@@ -45,10 +45,14 @@
 		<Unit filename="BaseRobot/Position.h" />
 		<Unit filename="BaseRobot/Robot.cpp" />
 		<Unit filename="BaseRobot/Robot.h" />
+		<Unit filename="Commande/Appeler.cpp" />
+		<Unit filename="Commande/Appeler.h" />
 		<Unit filename="Commande/Avancer.cpp" />
 		<Unit filename="Commande/Avancer.h" />
 		<Unit filename="Commande/Commande.cpp" />
 		<Unit filename="Commande/Commande.h" />
+		<Unit filename="Commande/DefMacro.cpp" />
+		<Unit filename="Commande/DefMacro.h" />
 		<Unit filename="Commande/EvaluerObst.cpp" />
 		<Unit filename="Commande/EvaluerObst.h" />
 		<Unit filename="Commande/FigerC.cpp" />

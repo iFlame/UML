@@ -11,7 +11,7 @@ class EvaluerObst : public Commande
         static EvaluerObst evaluerObst;
         EvaluerObst(string x);
         Commande* constructeurVirtuel();
-        EvaluerObst(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        EvaluerObst(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"EvaluerObst";}
     protected:
     private:

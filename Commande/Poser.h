@@ -13,7 +13,7 @@ class Poser : public Commande
         static Poser poser;
         Poser(string x);
         Commande* constructeurVirtuel();
-        Poser(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        Poser(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"Poser";}
     protected:
     private:

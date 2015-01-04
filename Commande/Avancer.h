@@ -13,7 +13,7 @@ class Avancer : public Commande
         static Avancer avancer;
         Avancer(string x);
         Commande* constructeurVirtuel();
-        Avancer(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        Avancer(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void setX(int);
         void setY(int);
         int StringToNumber ( const string& );

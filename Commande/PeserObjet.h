@@ -11,7 +11,7 @@ class PeserObjet : public Commande
         static PeserObjet peserObjet;
         PeserObjet(string x);
         Commande* constructeurVirtuel();
-        PeserObjet(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        PeserObjet(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"PeserObjet";}
     protected:
     private:

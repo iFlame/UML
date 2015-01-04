@@ -13,7 +13,7 @@ class Saisir : public Commande
         static Saisir saisir;
         Saisir(string x);
         Commande* constructeurVirtuel();
-        Saisir(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        Saisir(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"Saisir";}
         void setPoids(int);
         int StringToNumber ( const string& );

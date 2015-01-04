@@ -1,5 +1,6 @@
 #ifndef LECTEURFICHIER_H
 #define LECTEURFICHIER_H
+#include "Invocateur.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -8,7 +9,7 @@
 
 using namespace std;
 class Commande;
-class LecteurFichier
+class LecteurFichier : public Invocateur
 {
     private:
         Robot* robot;
@@ -16,20 +17,11 @@ class LecteurFichier
         Stack<Commande*> listeCommande;
         Commande* commande;
     public:
-        string arg;
-        string arg2;
-        string arg3;
-        string arg4;
-        string arg5;
-
-        istringstream* macro;
-
         LecteurFichier(string nomFichier, Robot* rob);
         LecteurFichier(istream* flux, Robot* rob);
         void execute(istream*);
         void execute();
         void desexecute();
-
     protected:
 };
 

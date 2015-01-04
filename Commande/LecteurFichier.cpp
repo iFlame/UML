@@ -15,8 +15,6 @@ void LecteurFichier::execute(istream* fluxx){
             string argz, argg;
             iss>>argz;
             iss>>argg;
-                                        cout<<"test2";
-
             if (argz.compare("DEFMACRO")==0){
                     string x;
                 while(arg3.compare("FINMACRO")!=0&&getline(*flux,ligne))  // tant que l'on peut mettre la ligne dans "contenu"
@@ -78,5 +76,8 @@ void LecteurFichier::execute(){
             listeCommande.push(commandeAExec);
         }
     }
+}
+void LecteurFichier::desexecute(){
 
 }
+

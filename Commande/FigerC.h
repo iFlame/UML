@@ -12,7 +12,7 @@ class FigerC : public Commande
         static FigerC figer;
         FigerC(string x);
         Commande* constructeurVirtuel();
-        FigerC(Robot* bot, LecteurFichier* lf) {Commande(bot,lf);}
+        FigerC(Robot* bot, Invocateur* lf) {Commande(bot,lf);}
         void test(){cout<<"FigerC";}
     protected:
     private:
