@@ -40,6 +40,10 @@ class Commande
             commande()["EVALUEROBST"]->setRobot(robot);
             commande()["EVALUEROBST"]->setLecteur(lf);
             commande()["APPELER"]->setLecteur(lf);
+            commande()["DEFMACRO"]->setLecteur(lf);
+            commande()["DEFMACRO"]->setRobot(robot);
+            commande()["APPELER"]->setRobot(robot);
+
         };
         static map<string,istream*>& listeMacro();
         static map<string,Commande*>& commande();

@@ -8,7 +8,6 @@ Commande* Avancer::constructeurVirtuel(){
     robot->afficher();
     Avancer* ava =new Avancer(robot,lf);
     ava->setRobot(robot);
-    ava->robot->afficher();
     ava->setX(StringToNumber(lf->arg2));
     ava->setY(StringToNumber(lf->arg3));
 

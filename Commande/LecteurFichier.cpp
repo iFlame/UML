@@ -11,15 +11,30 @@ void LecteurFichier::execute(istream* fluxx){
         {
             transform(ligne.begin(), ligne.end(),ligne.begin(), ::toupper);
             cout<<ligne<<endl;
-
             istringstream iss(ligne, istringstream::in);
-            iss>>arg;
-            iss>>arg2;
-            iss>>arg3;
+            string argz, argg;
+            iss>>argz;
+            iss>>argg;
+                                        cout<<"test2";
 
-            commandeAExec=commande->creerCommande(arg);// on l'affiche
+            if (argz.compare("DEFMACRO")==0){
+                    string x;
+                while(arg3.compare("FINMACRO")!=0&&getline(*flux,ligne))  // tant que l'on peut mettre la ligne dans "contenu"
+               {
+                    istringstream iss(ligne, istringstream::in);
+                   arg3=arg5=arg4="";
+                    iss>>arg3;
+                    iss>>arg5;
+                    iss>>arg4;
+                    x=x+arg3+" "+arg5+" "+arg4+"\n";
+               }
+                    macro=new istringstream(x);
+                }
+            else{
+                iss>>arg3;
+                }
+            commandeAExec=commande->creerCommande(argz);// on l'affiche
             commandeAExec->execute();
-            listeCommande.push(commandeAExec);
         }
     }
 
@@ -35,9 +50,29 @@ void LecteurFichier::execute(){
 
             istringstream iss(ligne, istringstream::in);
             iss>>arg;
-            iss>>arg2;
-            iss>>arg3;
-
+            if (arg.compare("APPELER")==0){
+                iss>>arg4;
+            }
+            else{
+                iss>>arg2;
+                if (arg.compare("DEFMACRO")==0){
+                    string x;
+                    while(arg3.compare("FINMACRO")!=0&&getline(*flux,ligne))  // tant que l'on peut mettre la ligne dans "contenu"
+                    {
+                        istringstream iss(ligne, istringstream::in);
+                        arg3=arg5=arg4="";
+                        iss>>arg3;
+                        iss>>arg5;
+                        iss>>arg4;
+                        if (arg3.compare("FINMACRO")!=0)
+                        x=x+arg3+" "+arg5+" "+arg4+"\n";
+                    }
+                    macro=new istringstream(x);
+                }
+                else{
+                    iss>>arg3;
+                }
+            }
             commandeAExec=commande->creerCommande(arg);// on l'affiche
             commandeAExec->execute();
             listeCommande.push(commandeAExec);

@@ -9,6 +9,7 @@ void Commande::execute(){}
 
 Commande::Commande(string d,Commande* objet){
     commande()[d]=objet;
+    cout<<d<<endl;
 }
 
 Commande* Commande::creerCommande(string comm){

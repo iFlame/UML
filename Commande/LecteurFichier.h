@@ -19,6 +19,11 @@ class LecteurFichier
         string arg;
         string arg2;
         string arg3;
+        string arg4;
+        string arg5;
+
+        istringstream* macro;
+
         LecteurFichier(string nomFichier, Robot* rob);
         LecteurFichier(istream* flux, Robot* rob);
         void execute(istream*);

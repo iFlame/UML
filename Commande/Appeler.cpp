@@ -10,10 +10,10 @@ Commande* Appeler::constructeurVirtuel(){
     robot->afficher();
     Appeler* ava =new Appeler(robot,lf);
     ava->setRobot(robot);
-    ava->setMacro(lf->arg2);
-
+    ava->setMacro(lf->arg4);
     return ava;
 }
+
 void Appeler::setMacro(string x){
     macro=x;
 }
